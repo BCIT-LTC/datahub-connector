@@ -29,6 +29,6 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{ secrets.TEST_AZURE_REGISTRY }}/${{ github.event.repository.name }}:setup
-# tags: ${{ secrets.AZURE_REGISTRY }}/${{ github.event.repository.name }}:${{ github.sha }}
+        tags: ${{ secrets.TEST_AZURE_REGISTRY }}/${{ github.event.repository.name }}:${{ github.sha }}
+        # tags: ${{ secrets.TEST_AZURE_REGISTRY }}/${{ github.event.repository.name }}:setup
 
