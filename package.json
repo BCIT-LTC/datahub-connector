@@ -9,7 +9,7 @@
     "test:unit": "vue-cli-service test:unit",
     "test:unit:debug": "vue-cli-service test:unit --inspect-brk --watch",
     "lint": "vue-cli-service lint",
-    "start": "http-server dist/ -o -S -C node_modules/openssl-self-signed-certificate/cert.pem -K node_modules/openssl-self-signed-certificate/key.pem",
+    "start": "http-server dist/ -a 0.0.0.0 --log-ip -S -C node_modules/openssl-self-signed-certificate/cert.pem -K node_modules/openssl-self-signed-certificate/key.pem",
     "test": "npm run test:unit",
     "posttest": "npm run lint"
   },
